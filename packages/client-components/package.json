@@ -1,0 +1,27 @@
+{
+  "name": "client-components",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "react": "^16.7.0",
+    "react-apollo": "^2.3.3",
+    "react-dom": "^16.7.0"
+  },
+  "scripts": {
+    "build:src": "babel ./src --out-dir ./dist --delete-dir-on-start --copy-files --source-maps",
+    "build": "NODE_ENV=production yarn build:src",
+    "start": "NODE_ENV=development yarn build:src --watch --source-maps",
+    "watch-components": "NODE_ENV=development nodemon --watch ./src --exec babel ./src --out-dir ./dist --copy-files --source-maps"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-preset-react-app": "^5.0.3",
+    "nodemon": "^1.18.9"
+  }
+}

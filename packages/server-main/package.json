@@ -1,0 +1,26 @@
+{
+  "name": "server-main",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.3.1",
+    "apollo-server-express": "^2.3.1",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "server-books": "^0.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js",
+    "build": "cross-env NODE_ENV=production babel src --source-maps -d dist",
+    "start": "cross-env NODE_ENV=development yarn run build && nodemon dist/index.js",
+    "serve": "cross-env NODE_ENV=production node dist/index.js"
+  }
+}
