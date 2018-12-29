@@ -2,8 +2,6 @@
 
 Template for modular projects using React, Node.js, Lerna and GraphQL.
 
-Template for project using Apollo Client and Server, React, Express and Lerna
-
 ## Build
 
 ```
