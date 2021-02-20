@@ -2,6 +2,8 @@
 
 Template for modular projects using React, Node.js, Lerna and GraphQL.
 
+For an updated version of this templates, please head over to [Goldstack](https://goldstack.party) and have a look at the [Next.js Template](https://goldstack.party/templates/nextjs).
+
 ## Build
 
 ```
